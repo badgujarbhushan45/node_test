@@ -14,6 +14,7 @@ var productAggrigator = function(fileNames) {
 var convertToObject = function convertToObject(jsonArray) {
     // console.log("jsonArray : " + JSON.stringify(jsonArray));
     // console.log("\n");
+    console.log(jsonArray);
     var productList = JSON.parse(JSON.stringify(jsonArray), function(k, v) { 
       return (typeof v === "object" || isNaN(v)) ? v : parseInt(v, 10)});
     // console.log(productList);
