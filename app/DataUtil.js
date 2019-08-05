@@ -10,7 +10,9 @@ var getSumPricePerCategory = function (productList) {
     return productList.reduce( (acc, product) => (acc[product.category] = (acc[product.category] || 0) + product.price, acc),  {} )
 }
 var getNoOfProductPerCategory = function (productList) {
-    return productList.reduce( (acc, product) => (acc[product.category] = (acc[product.category] || 0)+1, acc),  {} );
+    return productList.reduce((acc, product) => 
+        (acc[product.category] = acc[product.category] === undefined ? product.order_quantity : acc[product.category] + product.order_quantity, 
+            acc),  {} );
 }
 
 var getCostlyProduct = function (productList) {

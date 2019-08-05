@@ -1,0 +1,9 @@
+product_name ,SKU,price  ,order_quantity  , category
+Red TShirt,REDTS-123  ,299,10, Apparel
+Blue TShirt  ,BLUETS-123 ,299,10, Apparel
+teddy,TED-123,199,15, TOY
+Rose Hair Band,RHB-123,150,10, Accessories
+Red TOP  ,REDTP-123  ,599,19, Apparel
+Blue TOP ,BLUETP-123 ,299,20, Apparel
+IornMan Toy  ,IORN-123,899,15, TOY
+hearPhone holder ,EPH-123,100,10, Accessories
